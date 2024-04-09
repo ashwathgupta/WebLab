@@ -1,0 +1,136 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Lab 5 soluton</title>
+<style>
+    .font-style-demo {
+        font-family: Arial, sans-serif;
+        padding-left:90px;
+     
+    }
+    .font-style-demo h1 {
+        font-style: italic;
+    }
+    .font-style-demo p {
+        font-weight: bold;
+        font-size: x-large;
+    }
+    a:link {
+        color: blue;
+        text-decoration: none;
+    }
+    a:visited {
+        color: purple;
+    }
+    a:hover {
+        color: rgb(66, 13, 180);
+        text-decoration: underline;
+    }
+    a:active {
+        color: green;
+    }
+    .visibility-demo {
+        visibility: hidden;
+    }
+    .background-demo {
+        background-image: url('img5.png');
+        background-repeat: no-repeat;
+        height:min-content;
+        padding: 20px;
+        height: 200px;
+    }
+    .c1{
+        height:100px;
+        width:50%;
+    }
+    #repeat{
+        
+        background: url('img5.png');
+        height: 500px;
+        width:50%;
+        border:1px solid black;
+    }
+    #repeat-x { 
+        background: url('img5.png');
+        background-repeat: repeat-x; ;
+        height: 200px;
+        width:50%;
+        border:1px solid black;
+    }
+
+#repeat-y { 
+    background: url('img5.png');
+        background-repeat: repeat-y; ;
+        height: 700px;
+    
+        border:1px solid black;
+     }
+
+#no-repeat { 
+    background: url('img5.png');
+    background-repeat: no-repeat;
+    height: 200px;
+    border:1px solid black; }
+.visibility{
+    visibility: visible;
+}
+
+</style>
+</head>
+<body>
+   
+    <section>
+        <div class="font-style-demo">
+            <h1>Different Font Styles</h1>
+            <p>This is a paragraph demonstrating different font styles.</p>
+        </div>
+    </section>
+    <div class="c1">
+        <div class="background-demo">
+            <h2>Background Image with No Repeat</h2>
+            <p>This div demonstrates the background image with no repeat.</p>
+            <br><br>
+        </div>
+    </div>
+
+
+    <div class="link-styles-demo">
+        <h3>Link Styles</h3>
+        <p>
+            <a href="https://www.python.org/">Normal Link</a> |
+            <a href="https://www.python.org/" >Visited Link</a> |
+            <a href="https://www.python.org/" onmouseover="this.style.color='red'" onmouseout="this.style.color='blue'">Hover Link</a> |
+            <a href="https://www.python.org/" onclick="this.style.color='pink'">Active Link</a>
+        </p>
+    </div>
+    <div class="visibility">
+        <h4>Element Visibility</h4>
+        <p>This element is visible.</p>
+    </div>
+    <br><br>
+    <h2>background-repeat: repeat; </h2>
+    <div id="repeat">
+    </div>
+    
+    <h2>background-repeat: repeat-x;</h2>
+    <div id="repeat-x">
+    </div>
+    
+    <h2>background-repeat: repeat-y;</h2>
+    <div id="repeat-y">
+    </div>
+    
+    <h2>background-repeat: no-repeat;</h2>
+    <div id="no-repeat">
+    </div>
+    <div class="visibility-demo">
+        <h4>Element Visibility</h4>
+        <p>This element is initially hidden using CSS visibility property.</p>
+    </div>
+    <footer>
+        &copy above area not visible
+    </footer>
+</body>
+</html>
