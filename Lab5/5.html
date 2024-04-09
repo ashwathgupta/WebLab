@@ -19,14 +19,16 @@
     }
     a:link {
         color: blue;
-        text-decoration: none;
+        
     }
     a:visited {
-        color: purple;
+        color: rgb(14, 13, 14);
+
     }
     a:hover {
-        color: rgb(66, 13, 180);
+        color: red;
         text-decoration: underline;
+        background: olivedrab;
     }
     a:active {
         color: green;
@@ -35,7 +37,7 @@
         visibility: hidden;
     }
     .background-demo {
-        background-image: url('img5.png');
+        
         background-repeat: no-repeat;
         height:min-content;
         padding: 20px;
@@ -87,22 +89,15 @@
             <p>This is a paragraph demonstrating different font styles.</p>
         </div>
     </section>
-    <div class="c1">
-        <div class="background-demo">
-            <h2>Background Image with No Repeat</h2>
-            <p>This div demonstrates the background image with no repeat.</p>
-            <br><br>
-        </div>
-    </div>
-
+    
 
     <div class="link-styles-demo">
         <h3>Link Styles</h3>
         <p>
-            <a href="https://www.python.org/">Normal Link</a> |
-            <a href="https://www.python.org/" >Visited Link</a> |
-            <a href="https://www.python.org/" onmouseover="this.style.color='red'" onmouseout="this.style.color='blue'">Hover Link</a> |
-            <a href="https://www.python.org/" onclick="this.style.color='pink'">Active Link</a>
+            <a href="https://www.google.com/">Normal Link</a> 
+            <a href="https://www.google.com/" onclick="return true;this.style.color='yellow'">Visited Link  </a> 
+            <a href="https://www.google.com/" onmouseover="this.style.color='red'" onmouseout="this.style.color='blue'">Hover Link  </a> 
+            <a href="https://www.google.com/" onclick="this.style.color='green'">Active Link  </a>
         </p>
     </div>
     <div class="visibility">
@@ -123,8 +118,6 @@
     </div>
     
     <h2>background-repeat: no-repeat;</h2>
-    <div id="no-repeat">
-    </div>
     <div class="visibility-demo">
         <h4>Element Visibility</h4>
         <p>This element is initially hidden using CSS visibility property.</p>
@@ -134,3 +127,4 @@
     </footer>
 </body>
 </html>
+
