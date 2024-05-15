@@ -1,93 +1,71 @@
 <!DOCTYPE html>
 <html lang="en">
-
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>PHP</title>
+    <title>prime number checker</title>
+    <style>
 
-    <!-- <style>
-        body {
-            font-family: Arial, sans-serif;
-            margin: 0;
-            padding: 0;
+        #form{
+            /* background-color:magenta; */
+            margin:100px 200px;
+            font-size: 30px
         }
-
-        h1 {
-            font-size: 2rem;
-            text-align: center;
-            margin-top: 2rem;
+        form{
+            background-color:#F48FB1;
+            margin:100px 200px;
+            padding: 100px 200px;
         }
-
-        form {
-            display: flex;
-            justify-content: center;
-            margin-top: 2rem;
+        p{
+            text-align:center;
+            font-size:40px;
+            font-weight: bold;
         }
-
-        input[type="number"] {
-            width: 10rem;
-            height: 3rem;
-            font-size: 1.2rem;
-            padding: 0.5rem;
-            border: 1px solid #ccc;
-            border-radius: 4px;
-            margin-right: 1rem;
-        }
-
-        input[type="submit"] {
-            background-color: #4CAF50;
-            color: white;
-            padding: 1rem 2rem;
-            border: none;
-            border-radius: 4px;
-            cursor: pointer;
-            transition: background-color 0.3s ease-in-out;
-        }
-
-        input[type="submit"]:hover {
-            background-color: #357f38;
-        }
-
-        p {
-            font-size: 1.2rem;
-            margin-top: 2rem;
+        h1{
             text-align: center;
         }
-    </style> -->
-
+    </style>
 </head>
-
 <body>
-    <h1>Check for Prime</h1>
-    <form action="" method="POST">
-        <input type="number" name="number" />
-        <input type="submit">
+    <div id="form">
+    <form action="prime.php" method="POST">
+    <label>Enter a number</label>
+    <br>
+    <input type="number" name="num">
+    <br>
+
+    <button type="submit">Check</button>
     </form>
-    <?php 
-        function checkPrime($num){
-            for($j = 2; $j <= sqrt($num); $j++){
-                if($num % $j==0)
-                {
-                    return false;
-                }
+    </div>
+    <?php
+    
+    if($_SERVER["REQUEST_METHOD"]=="POST"){
+        $num=$_POST['num'];
+        $res="";
+        $flag=0;
+        for($i=2;$i<=sqrt($num);$i++){
+            if(($num%$i)==0){
+                $flag=1;
+                break;
             }
-            return true;
         }
 
-        if($_SERVER['REQUEST_METHOD']=='POST'){
-            $n=$_POST['number'];
-            if(checkPrime($n)){
-                echo '<p>Prime</p>';
-            }
-            else{
-                echo '<p>Not a Prime</p>';
-            }
-
+        if($flag==1){
+            $res="$num is not prime";
+        }
+        else{
+            $res="$num is prime";
         }
 
-        echo '<p> Todays date:' . date('d-m-Y') . '</p>'; 
+        echo "<p>$res</p>";
+        
+    }
+    // $date=getdate();
+    // echo "<p>$date[mday]/$date[mon]/$date[year]</p>"
+    $today = date("d-m-Y");
+
+// Display today's date in dd-mm-yyyy format
+ echo "<h1>Today's date is: <p>$today </p> </h1>"; 
     ?>
 </body>
-
 </html>
