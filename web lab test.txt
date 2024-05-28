@@ -1,0 +1,1554 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>T2</title>
+    <style>
+
+        .header{
+            position: static;
+            padding-bottom: 10%;
+        }
+        #back {
+            background-image: url("jssstu.jpg"); 
+
+            /* Add the blur effect */
+            filter: blur(10px);
+            -webkit-filter: blur(10px);
+
+            /* Full height */
+            height: 100%;
+            width: 100%;
+            /* Center and scale the image nicely */
+            background-position: center;
+            background-repeat: no-repeat;
+            background-size: cover;
+        }
+
+        #table {
+            color: black;
+            font-weight: bold;
+            border: 3px solid #f1f1f1;
+            position: absolute;
+            top: 90%;
+            left: 50%;
+            transform: translate(-50%, -50%);
+            z-index: 2;
+        }
+
+        body {
+            margin: -10px 10px;
+        }
+
+        table,
+        td,
+        th {
+            border: 1px solid black;
+            border-collapse: collapse;
+            text-align: center;
+            margin: auto;
+            padding: auto;
+            height: auto;
+           
+        }
+
+        th,
+        td {
+            padding: 15px 15px;
+            font-size: 10px;
+            /* background-color: #e0c3c3; */
+        }
+
+        #center {
+            margin: 0px;
+            text-align: center;
+            text-emphasis: bold;
+            background-color: #e7bca7;
+            overflow:visible;
+        }
+
+        /* #l,#r{
+            display: inline;
+        } */
+        #r {
+            text-align: right;
+        }
+    </style>
+</head>
+
+<body>
+    <div class="header" >
+        <h1>JSS Science and Technology University</h1>
+    </header>
+    <img id="back" src="jssstu.jpg" alt=" background image of jssstu logo">
+    <div id="table">
+        <div id="center">
+            
+            <h1>JSS Science and Technology University Mysuru</h1>
+            <h4>Timetable</h4>
+        </div>
+
+        <div id="sub">
+            <!-- <br> <br> <br> <br> <br> <br> <br> <br> <br> <br> <br> <br> <br> -->
+            <p id="l">CSE D section </p>
+            <p id="r">Class : CS103/IS Hall/CS001</p>
+        </div>
+
+        <div id="timetable">
+            <table>
+
+                <tr>
+                    <th>DAY</th>
+                    <th>7.30-8.30</th>
+                    <th>8.30-9.30</th>
+                    <th>9.30-10.30</th>
+                    <th>10.30-11.00</th>
+                    <th>11.00-11.50</th>
+                    <th>11.50-12.40</th>
+                    <th>12.40-1.30</th>
+                    <th>1.30-2.30</th>
+                    <th>2.30-3.30</th>
+                    <th>3.30-4.30</th>
+                    <th>4.30-5.30</th>
+                </tr>
+
+                <tr>
+                    <td>Monday</td>
+                    <td>-</td>
+                    <td>-</td>
+                    <td>OE 2</td>
+                    <td rowspan="6">B <br> R <br> E <br> A <br> K</td>
+                    <td>20CS641<br>20CS642<br>20CS643</td>
+                    <td>20CS620 [IS Hall]</td>
+                    <td>20CS610 [IS Hall]</td>
+
+                    <td rowspan="6">B <br> R <br> E <br> A <br> K</td>
+                    <td colspan="1"></td>
+                    <td colspan="1"></td>
+                    <td colspan="1"></td>
+
+                </tr>
+                <tr>
+                    <td>Tuesday</td>
+                    <td>-</td>
+                    <td>-</td>
+                    <td>OE3</td>
+                    <td colspan="3" rowspan="1">20CS67L D1 <br> SW Lab 1<br><br>20CS68L D1<br>SW Lab 2</td>
+                    <td>20CS610 <br> CS103</td>
+                    <td>20CS620<br> CS103</td>
+                    <td>20CS630<br> CS103</td>
+                    <!-- <td colspan="3">LAB</td> -->
+
+                </tr>
+                <tr>
+                    <td>Wednesday</td>
+                    <td>-</td>
+                    <td>20CS641<br>20CS642<br>20CS643</td>
+                    <td>OE2</td>
+                    <td colspan="3" rowspan="1">20CS68L D1 <br> SW Lab 1<br><br>20CS67L D1<br>SW Lab 2</td>
+                    <td>20CS630<br>[CS001]</td>
+                    <td>20HU612<br>[CS001]</td>
+                    <td>20HU612<br>[CS001]</td>
+                    
+
+                </tr>
+                <tr>
+                    <td>Thursday</td>
+                    <td>-</td>
+                    <td>20CS610<br>IS Hall</td>
+                    <td>OE3</td>
+                    <td colspan="3" rowspan="1">20CS630P D2 <br> HW Lab 1<br>[11:00-1:00]</td>
+                    <td></td>
+                    <td></td>
+                    <td></td>
+                    
+
+                </tr>
+                <tr>
+                    <td>Friday</td>
+                    <td>-</td>
+                    <td>20CS641<br>20CS642<br>20CS643</td>
+                    <td>OE2</td>
+                    <td>20CS620 [CS103]</td>
+                    <td>20CS610 [CS103]</td>
+                    <td>20CS610 [CS103]</td>
+                    <td><td></td><td></td></td>
+
+                </tr>
+                <tr>
+                    <td>Saturday</td>
+                    <td colspan="2" rowspan="1">20CS630P D1 <br> HW Lab 1</td>
+                    <td>OE3</td>
+                    <td></td>
+                    <td></td>
+                    <td></td>
+                   
+                   
+
+                </tr>
+            </table>
+            <br><br><br>
+            <table>
+                <tr>
+                    <th>Code</th>
+                    <th>Title</th>
+                    <th>Credits</th>
+                    <th>Instructor</th>
+                </tr>
+
+                <tr>
+                    <td>20CS610</td>
+                    <td>ML</td>
+                    <td>4</td>
+                    <td>Prof RR</td>
+                </tr>
+                <tr>
+                    <td>20CS610</td>
+                    <td>web</td>
+                    <td>3</td>
+                    <td>Prof ARM</td>
+                </tr>
+                <tr>
+                    <td>20CS630</td>
+                    <td>Iot</td>
+                    <td>3</td>
+                    <td>Prof SGC</td>
+                </tr>
+                <tr>
+                    <td>20CS641<br>20CS642<br>20CS643</td>
+                    <td>Cloud computing/ automotive cyber security/cyber security</td>
+                    <td>3</td>
+                    <td>Prof HDN/ <br>Prof MAA<br>Prof SPM/RP/RK</td>
+                </tr>
+                
+                
+               
+               
+
+            </table>
+
+        </div>
+    </div>
+    <footer>
+        <p>&copy; 2024 jssstu. All rights reserved.</p>
+        <!-- Add any other footer content here -->
+    </footer>
+    
+</body>
+
+</html>
+
+
+
+
+
+
+---------------
+
+
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>FeedBack</title>
+    <style>
+      body{
+        background-color: purple;
+        color: white;
+      }
+      h1{
+        text-align: center;
+      }
+      form{
+       margin-left: auto;
+       margin-right: auto;
+        text-align: center;
+        border: 1px solid black;
+        padding-top: 50px;
+        height: 500px;
+        background-color: grey;
+        color: white;
+        width: 50%;
+      }
+      .rad{
+        margin-bottom: 10px;
+      }
+      textarea{
+        margin-top: 5px;
+        margin-bottom: 10px;
+      }
+    </style>
+</head>
+
+<body>
+    <h1>Feedback Form</h1>
+    <form action="">
+        
+        <input type="text" name="fname" placeholder="Enter your name" class="rad"><br>
+        <input type="text" name="femail" placeholder="Enter your mail id" class="rad"><br>
+        <input type="text" name="usn" placeholder="Enter your usn" class="rad"><br>
+        <label for ="semester">Sem:</label>
+        <select name="semester" id="">
+            <option value="1" selected>1</option>
+            <option value="2">2</option>
+            <option value="3">3</option>
+            <option value="4">4</option>
+            <option value="5">5</option>
+            <option value="6">6</option>
+            <option value="7">7</option>
+            <option value="8">8</option>
+        </select><br><br>
+        Branch: <br>
+        <input type="radio" class="rad" name="branch" value="CS" >CS</input><br>
+        <input type="radio" class="rad" name="branch" value="IS">IS</input><br>
+        <input type="radio" class="rad" name="branch" value="ECE">ECE</input><br>
+        <br>
+        <input type="checkbox" name="send" checked>Send copy of feedback to mail</input><br><br>
+        <textarea name="feedback" rows="5" cols="30" placeholder="Type Here"></textarea><br>
+        <input type="submit" value="Submit">
+        <input type="reset" value="Reset">
+    </form>
+</body>
+
+</html>
+
+
+
+#2b
+
+
+aframes.html
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Frames</title>
+    <frameset cols="20%,*">
+        <frame src="left.html" name="left">
+    <frameset cols="100%,*">
+        <frame src="right.html" name="main">
+    </frameset>
+
+    <noframes>
+        <body>
+        <p>This browser does not support frames</p>
+    </body>
+    </noframes>
+</head>
+
+</html>
+
+
+left.html
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>links</title>
+</head>
+<body>
+    <a href="https://en.wikipedia.org/wiki/Computer_science" target="main">Computer science</a>
+    <br><br>
+    <a href="https://en.wikipedia.org/wiki/Information_science" target="main">Information science</a>
+    <br><br>
+    <a href="https://en.wikipedia.org/wiki/Electrical_engineering" target="main">Electrical science</a>
+    <br><br>
+    <a href="https://en.wikipedia.org/wiki/Mechanical_engineering" target="main">Mechanical science</a>
+    <br><br>
+</body>
+</html>
+
+
+right.html
+
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>target</title>
+</head>
+<body>
+    <p>your contents are displayed here</p>
+</body>
+</html>
+
+
+---------------------
+
+3
+
+bframes.html
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Frames</title>
+    <frameset cols="50%,50%">
+        <frameset rows="50%,50%">
+            <frame src="tl.html" name="tl">
+            <frame src="tr.html" name="tr">
+        </frameset>
+        <frameset rows="50%,50%">
+            <frame src="bl.html" name="bl">
+            <frame src="br.html" name="br">
+        </frameset>
+    </frameset>
+        <noframes>
+            <body>
+    <p>NOT SUPPORTed</p>
+            </body>
+        </noframes>
+</head>
+
+</html>
+
+bl.html
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>bl</title>
+    <style>
+        body{
+            background-color: antiquewhite;
+        }
+    </style>
+</head>
+<body>
+    <h1>BOTTOM LEFT</h1>
+</body>
+</html>
+
+
+br.html
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>bl</title>
+    <style>
+        body{
+            background-color: aqua;
+        }
+    </style>
+</head>
+<body>
+    <h1>BOTTOM right</h1>
+</body>
+</html>
+
+tl.html
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>bl</title>
+    <style>
+        body{
+            background-color: aquamarine;
+        }
+    </style>
+</head>
+<body>
+    <h1>TOP LEFT</h1>
+</body>
+</html>
+
+
+tr.html
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>bl</title>
+    <style>
+        body{
+            background-color: blueviolet;
+        }
+    </style>
+</head>
+<body>
+    <h1>TOP RIGHT</h1>
+</body>
+</html>
+
+
+
+-------------------
+
+4 resume
+
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <style>
+        body {
+          font-family: sans-serif;
+          display: flex;
+          justify-content: space-evenly;
+        }
+        #sec-1 {
+          width: 50%;
+        }
+
+        #sec-2 {
+          width: 25%;
+        }
+
+
+        .skill-list, .lang-list {
+          list-style: none;
+        }
+
+        .skill-list li, .lang-list li {
+          display: inline-block;
+          border: solid 1px black;
+          background-color: whitesmoke;
+          margin: 5px;
+          padding: 10px;
+          text-align: center;
+          border-radius: 8px;
+        }
+
+    </style>
+    <title>Resume</title>
+  </head>
+  <body>
+      <section id="sec-1">
+        <h1><a href="https://www.linkedin.com/"> Ashwath Gupta</a></h1>
+        <div id="image">
+          <img src="profile pic2.jpg" alt="" height="200">
+        </div>
+        <p>
+          
+          Passionate about Computer Science and Programming, Quick Learner,
+          Interested in Problem solving
+        </p>
+        <br />
+        <div>
+          <h3>Education</h3>
+          <div>
+            <h4>Sri Jayachamrajendra Engineering College (SJCE), Mysuru</h4>
+            <i><p>B.E in Computer Science</p></i>
+            <p>Expected year of Graduation - 2024</p>
+            <p>Currently Pursuing</p>
+            <p>Current CGPA - 8.5 / 10</p>
+          </div>
+          <div>
+            <h4>Delhi Public School Sushant Lok</h4>
+            <i><p>12th</p></i>
+            <p>Passed 12th in 2020</p>
+            <p>Board - CBSE</p>
+            <p>Score - 94.4%</p>
+          </div>
+        </div>
+        <div>
+          <h3>Projects</h3>
+          <div>
+            <h4>shopping website</h4>
+            <p>
+              A simple shopping website using html css and javascript
+            </p>
+          </div>
+        </div>
+        <div>
+          <h3>Additional</h3>
+          <ul>
+            <li>Google Developers Student Club Lead</li>
+          </ul>
+        </div>
+      </section>
+      <section id="sec-2">
+        <div>
+          <address>
+            <p><i>Vijayshripura</i></p>
+            <p> SJCE college</p>
+            <p>Mysuru</p>
+          </address>
+          <p>+91 1234567890</p>
+          <address>AshwathGupta2002@gmail.com</address>
+          <p>On Github as: Ashwath Gupta</p>
+        </div>
+        <div>
+          <h3>Skills</h3>
+          <ul class="skill-list">
+            <li>Data Structures & Algorithms</li>
+            <li>Python</li>
+            <li>HTML</li>
+            <li>CSS</li>
+            <li>C</li>
+          </ul>
+        </div>
+        <div>
+          <h3>Languages</h3>
+          <ul class="lang-list">
+            <li>English</li>
+            <li>Hindi</li>
+            <li>Marathi</li>
+          </ul>
+        </div>
+      </section>
+  </body>
+</html>
+
+
+-------------
+5
+background reapeat
+
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Lab 5 soluton</title>
+<style>
+    .font-style-demo {
+        font-family: Arial, sans-serif;
+        padding-left:90px;
+     
+    }
+    .font-style-demo2 {
+        font-family:Impact, Haettenschweiler, 'Arial Narrow Bold', sans-serif;
+        padding-left:90px;
+     
+    }
+    .font-style-demo h1 {
+        font-style: italic;
+    }
+    .font-style-demo p {
+        font-weight: bold;
+        font-size: x-large;
+    }
+    a:link {
+        color: blue;
+        
+    }
+    a:visited {
+        color: rgb(14, 13, 14);
+
+    }
+    a:hover {
+        color: red;
+        text-decoration: underline;
+        background: olivedrab;
+    }
+    a:active {
+        color: green;
+    }
+    .visibility-demo {
+        visibility: hidden;
+    }
+    .background-demo {
+        
+        background-repeat: no-repeat;
+        height:min-content;
+        padding: 20px;
+        height: 200px;
+    }
+    .c1{
+        height:100px;
+        width:50%;
+    }
+    #repeat{
+        
+        background: url('img5.png');
+        height: 500px;
+        width:50%;
+        border:1px solid black;
+    }
+    #repeat-x { 
+        background: url('img5.png');
+        background-repeat: repeat-x; ;
+        height: 200px;
+        width:50%;
+        border:1px solid black;
+    }
+
+#repeat-y { 
+    background: url('img5.png');
+        background-repeat: repeat-y; ;
+        height: 700px;
+    
+        border:1px solid black;
+     }
+
+#no-repeat { 
+    background: url('img5.png');
+    background-repeat: no-repeat;
+    height: 200px;
+    border:1px solid black; }
+.visibility{
+    visibility: visible;
+}
+
+</style>
+</head>
+<body>
+   
+    <section>
+        <div class="font-style-demo">
+            <h1>Different Font Styles</h1>
+            <p>This is a paragraph demonstrating different font styles.</p>
+        </div>
+        <div class="font-style-demo2">
+            <h1>Different Font Styles</h1>
+            <p>This is a paragraph demonstrating different font styles.</p>
+        </div>
+    </section>
+    
+
+    <div class="link-styles-demo">
+        <h3>Link Styles</h3>
+        <p>
+            <a href="https://www.google.com/">Normal Link</a> 
+            <a href="https://www.google.com/" onclick="return true;this.style.color='yellow'">Visited Link  </a> 
+            <a href="https://www.google.com/" onmouseover="this.style.color='red'" onmouseout="this.style.color='blue'">Hover Link  </a> 
+            <a href="https://www.google.com/" onclick="this.style.color='green'">Active Link  </a>
+        </p>
+    </div>
+    <div class="visibility">
+        <h4>Element Visibility</h4>
+        <p>This element is visible.</p>
+    </div>
+    <br><br>
+    <h2>background-repeat: repeat; </h2>
+    <div id="repeat">
+    </div>
+    
+    <h2>background-repeat: repeat-x;</h2>
+    <div id="repeat-x">
+    </div>
+    
+    <h2>background-repeat: repeat-y;</h2>
+    <div id="repeat-y">
+    </div>
+    
+    <h2>background-repeat: no-repeat;</h2>
+    <div class="visibility-demo">
+        <h4>Element Visibility</h4>
+        <p>This element is initially hidden using CSS visibility property.</p>
+    </div>
+    <footer>
+        &copy above area not visible
+    </footer>
+</body>
+</html>
+
+
+
+-----------------
+
+6 website 
+
+
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Institution</title>
+    <style>
+        body {
+            background-color: blanchedalmond;
+            font-family: cursive;
+        }
+
+        ul {
+            list-style: none;
+            display: flex;
+        }
+
+        #nav1 li {
+            margin: 20px 20px;
+            background-color: aqua;
+            padding: 20px 20px;
+            border: 2px solid black;
+            border-radius: 10px;
+        }
+
+        header {
+            background-color: #94dcdc;
+            display: flex;
+            align-items: center;
+            justify-content: space-around;
+        }
+
+        #nav2 {
+            display: flex;
+            justify-content: space-around;
+            align-items: center;
+            background-color: #94dcdc;
+            margin: 0;
+        }
+
+        #nav2 li {
+            border: 3px solid black;
+            padding: 20px 20px;
+            background-color: azure;
+            border-radius: 10px
+        }
+
+        img {
+            border: 2px solid black;
+            padding: 43px 68px;
+        }
+
+        h1 {
+            text-align: center;
+            color: orange;
+            text-decoration: underline;
+        }
+        h2{
+            text-align: center;
+    color: green;
+    text-decoration: underline;
+        }
+
+        main{
+            display: flex;
+        }
+        p{
+            padding: 10px 100px;
+    max-width: 500px;
+        }
+        nav img{
+            margin: 0 100px;
+    width: 142px;
+    height: 24px;
+        }
+
+        footer{
+            margin: 50px;
+    background-color: #80e280;
+    display: flex;
+    justify-content: space-around;
+        }
+
+        footer ul{
+            align-items: center;
+    display: grid;
+        }
+        footer li{
+            padding: 20px 20px;
+        }
+
+    </style>
+</head>
+
+<body>
+    <header>
+        <img src="jssstu.jpg" alt="SJCE logo" height = "150px">
+        <nav>
+            <ul id="nav1">
+                <li>About</li>
+                <li>Admission</li>
+                <li>Research</li>
+                <li>Programmes</li>
+            </ul>
+        </nav>
+    </header>
+
+    <ul id="nav2">
+        <li>Timetable</li>
+        <li>Exams</li>
+        <li>Admission</li>
+        <li>Login</li>
+    </ul>
+    <h1>SRI JAYACHAMARAJENDRA COLLEGE OF ENGINEERING</h1>
+        <h2>CONSTITUENT OF JSSSTU, MYSORE</h2>
+    <main>
+        <p>
+            Lorem ipsum dolor sit amet consectetur adipisicing elit. Labore, nobis qui. Quod magnam iste enim voluptates
+            esse alias culpa eligendi, incidunt reiciendis asperiores numquam porro omnis ipsam eius commodi. Dolorem
+            voluptate velit optio quidem?
+        </p>
+
+        <img src="jssstu.jpg" alt="another image">
+    </main>
+
+    <footer>
+        <div>
+        <h2>Contact us</h2>
+        <ul>
+            <li>0821525649</li>
+            <li>jssstu@jssstu.com</li>
+            <li>0821546778</li>
+        </ul>
+        </div>
+        <div>
+        <h2>Quick links</h2>
+        <ul>
+            <li><a href="">reports</a></li>
+            <li><a href="">vission</a></li>
+            <li><a href="">mission</a></li>
+        </ul>
+        </div>
+    </footer>
+
+</body>
+
+</html>
+
+
+---------------
+
+7 calculator 
+
+
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Calculator</title>
+
+    <style>
+        body {
+            background-color: aqua;
+            font-family: cursive;
+        }
+
+        h1 {
+            text-align: center;
+        }
+
+        #calc {
+            display: flex;
+            justify-content: center;
+            align-items: center;
+        }
+
+        table {
+            border: 3px solid black;
+            border-radius: 10px;
+        }
+
+        input {
+            width: 100%;
+            background-color: aquamarine;
+            font-size: 30px;
+            border: 2px solid black;
+            border-radius: 3px;
+            padding: 10px;
+        }
+
+        input:hover {
+            cursor: pointer;
+            background-color: bisque;
+        }
+    </style>
+</head>
+
+<body>
+    <h1>CALCULATOR</h1>
+    <div id="calc">
+        <table>
+            <tr>
+                <td colspan="3"><input type="text" id="result"></td>
+                <td><input type="button" value="Clear" onclick="clearscreen()"></td>
+            </tr>
+
+            <tr>
+                <td><input type="button" value="1" onclick="addstring('1')"></td>
+                <td><input type="button" value="2" onclick="addstring('2')"></td>
+                <td><input type="button" value="3" onclick="addstring('3')"></td>
+                <td><input type="button" value="+" onclick="addstring('+')"></td>
+            </tr>
+            <tr>
+                <td><input type="button" value="4" onclick="addstring('4')"></td>
+                <td><input type="button" value="5" onclick="addstring('5')"></td>
+                <td><input type="button" value="6" onclick="addstring('6')"></td>
+                <td><input type="button" value="-" onclick="addstring('-')"></td>
+            </tr>
+            <tr>
+                <td><input type="button" value="7" onclick="addstring('7')"></td>
+                <td><input type="button" value="8" onclick="addstring('8')"></td>
+                <td><input type="button" value="9" onclick="addstring('9')"></td>
+                <td><input type="button" value="*" onclick="addstring('*')"></td>
+            </tr>
+
+            <tr>
+                <td><input type="button" value="0" onclick="addstring('0')"></td>
+                <td><input type="button" value="." onclick="addstring('.')"></td>
+                <td><input type="button" value="/" onclick="addstring('/')"></td>
+                <td><input type="button" value="=" onclick="calculate()"></td>
+            </tr>
+        </table>
+    </div>
+
+    <script>
+        function clearscreen() {
+            document.getElementById("result").value = "";
+
+        }
+
+        function addstring(val) {
+            document.getElementById("result").value += val;
+        }
+
+        function calculate() {
+            var p = document.getElementById("result").value;
+            var q = eval(p);
+            document.getElementById("result").value = q;
+        }
+    </script>
+</body>
+
+
+</html>
+
+
+
+
+7b
+
+forms , display text box 
+
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Form</title>
+    <style>
+        body {
+            padding: 10px;
+            margin: 10px;
+            /* text-align: center */
+        }
+
+        div {
+            background-color: rgba(128, 128, 128, 0.667);
+            padding: 10px;
+            width: 300px;
+        }
+
+        input[type="submit"] {
+            text-align: center;
+            margin-left: 100px;
+        }
+
+        label,
+        input {
+            padding: 5px;
+            margin: 5px;
+        }
+    </style>
+    <script>
+        function validate() {
+            let name = document.getElementById('name').value;
+            let email = document.getElementById('email').value;
+            let phone = document.getElementById('phone').value;
+            let gender = document.getElementById('gender').value;
+        //    alert(gender)
+            if(name.length===0){
+                alert("Enter name")
+                return
+            }
+            if (phone.length != 10) {
+                alert('Please enter correct mobile no');
+               return
+            }
+            if(gender==="select"){
+                alert("Enter Gender")
+                return
+            }
+
+
+            var output = 'Name: ' + name + '\n';
+            output += 'Email: ' + email + '\n';
+            output += 'Mobile No: ' + phone + '\n';
+            output += 'Gender: ' + gender + '\n';
+            let display = document.getElementById('result');
+            display.value = output;
+            return false;
+           
+        }   
+    </script>
+</head>
+
+<body>
+    <div class="container">
+        <h1>Form Validation</h1><br>
+        <form action="" onsubmit="return validate()">
+            <label for="name">Name:</label>
+            <input type="text" id="name" /><br>
+            <label for="email">Email:</label>
+            <input type="email" id="email" /><br>
+            <label for="phone">Mobile No:</label>
+            <input type="tel" id="phone" /><br><br>
+            <label for="name">Gender:</label>
+            <select id="gender">
+                <option value="select" selected disabled>Select</option>
+                <option value="male">Male</option>
+                <option value="female">Female</option>
+                <option value="others">Others</option>
+            </select><br><br>
+            <input type="submit" value="Submit" >
+        </form>
+    </div>
+    <div>
+        <textarea id="result" cols="30" rows="10" readonly></textarea>
+    </div>
+</body>
+
+</html>
+
+
+------------
+
+8
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Form Validation</title>
+    <script>
+        function validate() {
+            var regno = document.getElementById('regno').value;
+            var test1 = parseInt(document.getElementById('test1').value);
+            var test2 = parseInt(document.getElementById('test2').value);
+            var test3 = parseInt(document.getElementById('test3').value);
+            var regnoregex = /^\d{2}[A-Za-z]{3}\d{2}[A-Za-z]{2}\d{3}$/;
+
+            if (!regnoregex.test(regno)) {
+                alert('Give correct Regno.');
+                return;
+            }
+
+            if (!validateMarks(test1) || !validateMarks(test1) || !validateMarks(test1)) {
+                alert('Enter the marks(0-20)');
+                return;
+            }
+
+            var avg = (test1 + test2 + test3 - Math.min(test1, test2, test3)) / 2;
+            alert('Average = ' + avg.toFixed(2));
+        }
+        function validateMarks(marks) {
+            return !isNaN(marks) && marks >= 0 && marks <= 20;
+        }
+    </script>
+    <style>
+        body {
+            padding: 10px;
+            margin: 10px;
+        }
+
+        label,
+        input {
+            margin: 5px;
+        }
+    </style>
+</head>
+
+<body>
+    <div>
+        <h1>Form Validation</h1>
+        <form action="" onsubmit="return validate()">
+            <label for="regno" >Register Number:</label>
+            <input type="text" id="regno"/><br>
+            <label for="subcode">Subject Code:</label>
+            <input type="text" id="subcode" /><br>
+            <label for="test1">Test 1 marks:</label>
+            <input type="number" id="test1" /><br>
+            <label for="test2">Test 2 marks:</label>
+            <input type="number" id="test2" /><br>
+            <label for="test3">Test 3 marks:</label>
+            <input type="number" id="test3" /><br>
+            <input type="submit">
+        </form>
+    </div>
+</body>
+
+</html>
+
+
+--------------
+9
+
+
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Validation</title>
+    <script>
+        function validate() {
+            let name = document.getElementById('name').value;
+            let email = document.getElementById('email').value;
+            let uid = document.getElementById('uid').value;
+            let pass = document.getElementById('pass').value;
+
+
+            if (uid.length < 5 || uid.length > 12) {
+                alert('UID must be 5-12');
+                return false;
+            }
+
+            let nameregex = /^[A-Za-z\s]{5,}$/;
+            if (!nameregex.test(name)) {
+                alert('Name must be atleast 15 characters');
+                return false;
+            }
+
+            let passregex = /^(?=.*[A-Z])(?=.*\d)(?=.*[!@#$%*&?])[A-Za-z\d!@#$%&*?]{8,}$/;
+            if (!passregex.test(pass)) {
+                alert('Password must be eight characters including one uppercase letter, one special character and alphanumeric characters');
+                return false;
+            }
+            alert("submitted")
+            return true
+        }
+    </script>
+</head>
+
+<body>
+    <div class="container">
+        <h1>Form Validation</h1><br>
+        <form action="" onsubmit="return validate()">
+            <label for="uid">User ID:</label>
+            <input type="text" id="uid" /><br>
+            <label for="name">Name:</label>
+            <input type="text" id="name" /><br>
+            <label for="pass">Password:</label>
+            <input type="password" id="pass" /><br>
+            <label for="email">Email:</label>
+            <input type="email" id="email" /><br>
+            <input type="submit" value="Submit">
+        </form>
+    </div>
+</body>
+
+</html>
+
+
+
+------------
+
+10
+date
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>date display</title>
+    <style>
+        h1{
+            text-align:center;
+        }
+        p{
+            color: blue;
+            background-color: aqua;
+        }
+    </style>
+    
+</head>
+<body>
+    <!-- <?php
+    $date=getdate();
+    echo "<h1>Todays date is <p>$date[mday]/$date[mon]/$date[year]</p></h1>"
+    ?> -->
+    <?php
+// Get today's date
+$today = date("d-m-Y");
+
+// Display today's date in dd-mm-yyyy format
+ echo "<h1>Today's date is: <p>$today </p> </h1>"; 
+?>
+</body>
+</html>
+
+
+10b 
+prime
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>prime number checker</title>
+    <style>
+
+        #form{
+            /* background-color:magenta; */
+            margin:100px 200px;
+            font-size: 30px
+        }
+        form{
+            background-color:#F48FB1;
+            margin:100px 200px;
+            padding: 100px 200px;
+        }
+        p{
+            text-align:center;
+            font-size:40px;
+            font-weight: bold;
+        }
+        h1{
+            text-align: center;
+        }
+    </style>
+</head>
+<body>
+    <div id="form">
+    <form action="prime.php" method="POST">
+    <label>Enter a number</label>
+    <br>
+    <input type="number" name="num">
+    <br>
+
+    <button type="submit">Check</button>
+    </form>
+    </div>
+    <?php
+    
+    if($_SERVER["REQUEST_METHOD"]=="POST"){
+        $num=$_POST['num'];
+        $res="";
+        $flag=0;
+        for($i=2;$i<=sqrt($num);$i++){
+            if(($num%$i)==0){
+                $flag=1;
+                break;
+            }
+        }
+
+        if($flag==1){
+            $res="$num is not prime";
+        }
+        else{
+            $res="$num is prime";
+        }
+
+        echo "<p>$res</p>";
+        
+    }
+    // $date=getdate();
+    // echo "<p>$date[mday]/$date[mon]/$date[year]</p>"
+    $today = date("d-m-Y");
+
+// Display today's date in dd-mm-yyyy format
+ echo "<h1>Today's date is: <p>$today </p> </h1>"; 
+    ?>
+</body>
+</html>
+
+
+-------------
+
+11
+
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+
+    <style>
+       
+        h1 {
+            
+            text-align: center;
+            margin-top: 2rem;
+        }
+
+        form {
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+            margin-top: 2rem;
+        }
+
+        label {
+            font-size: 1.2rem;
+            margin-bottom: 1rem;
+        }
+
+        textarea {
+            height: 10rem;
+            resize: none;
+           
+            padding: 0.5rem;
+            border: 1px solid black;
+        }
+
+        input[type="submit"] {
+            background-color: #4CAF50;
+            color: white;
+            padding: 1rem 2rem;
+            
+           
+            cursor: pointer;
+            margin-top: 1rem;
+            transition: background-color 0.3s ease-in-out;
+        }
+
+        input[type="submit"]:hover {
+            background-color: #357f38;
+        }
+
+        p {
+            font-size: 1.2rem;
+            margin-top: 2rem;
+            text-align: center;
+        }
+    </style>
+
+</head>
+
+<body>
+    <h1>File Contents</h1>
+    <form method="POST">
+        <label for="msg">Enter the Message:</label><br>
+        <textarea name="msg" id="msg" cols="30" rows="10"></textarea><br>
+        <input type="submit">
+    </form>
+    <?php
+        if($_SERVER['REQUEST_METHOD']=='POST'){
+            $info=$_POST['msg'];
+            $f=fopen("info.txt","a");
+            fwrite($f,$info);
+            fclose($f);
+
+            echo '<p> File contents are: <br> ' . nl2br(file_get_contents("info.txt")) . '<p>';
+        }
+
+    ?>
+</body>
+
+</html>
+
+
+
+-----------------
+
+12
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Login</title>
+    <style>
+ body {
+            background-color: aqua;
+            font-family: cursive;
+        }
+
+        form {
+            margin: 100px 242px;
+            padding: 100px 174px;
+            background-color: aquamarine;
+        }
+
+        label {
+            margin: 20px;
+            padding: 20px;
+        }
+
+        input {
+            margin: 10px;
+            padding: 10px;
+            border: 2px solid;
+            border-radius: 4px
+        }
+
+        button {
+            margin: 32px 180px;
+            font-size: 13px;
+            padding: 20px;
+            font-family: cursive;
+            border: 3px solid black;
+            border-radius: 29px;
+
+        }
+
+        textarea {
+            margin: 100px;
+            padding: 100px;
+        }
+    </style>
+</head>
+<body>
+    <form action="login.php" method="POST">
+        <label >Enter your name</label>
+        <br>
+        <input type="text" name="name">
+        <br>
+        <label >Enter your password</label>
+        <br>
+        <input type="password" name="pass">
+        <br>
+
+        <button type="submit">LOGIN</button>
+    </form>
+    <?php
+    if($_SERVER["REQUEST_METHOD"]=="POST"){
+        $un=$_POST['name'];
+        $pw=$_POST['pass'];
+        $con=fopen("user.txt","r");
+        $cont=fread($con,filesize("user.txt"));
+        if(strpos($cont,$un . ":" . $pw)!==false){
+            echo "<p>LOGIN SUCCESSFUL</p>";
+        }
+        else{
+            echo "<p>LOGIN UNSUCCESSFUL</p>";
+
+        }
+    }
+
+    ?>
+</body>
+</html>
+
+
+
+
+file for 12  user.txt
+ashwath:ag
+shamik:sg
+
+
+
+
+
+
+
