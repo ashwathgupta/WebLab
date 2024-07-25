@@ -1,0 +1,148 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Institution</title>
+    <style>
+        body {
+            background-color: blanchedalmond;
+            font-family: cursive;
+        }
+
+        ul {
+            list-style: none;
+            display: flex;
+        }
+
+        #nav1 li {
+            margin: 20px 20px;
+            background-color: aqua;
+            padding: 20px 20px;
+            border: 2px solid black;
+            border-radius: 10px;
+        }
+
+        header {
+            background-color: #94dcdc;
+            display: flex;
+            align-items: center;
+            justify-content: space-around;
+        }
+
+        #nav2 {
+            display: flex;
+            justify-content: space-around;
+            align-items: center;
+            background-color: #94dcdc;
+            margin: 0;
+        }
+
+        #nav2 li {
+            border: 3px solid black;
+            padding: 20px 20px;
+            background-color: azure;
+            border-radius: 10px
+        }
+
+        img {
+            border: 2px solid black;
+            padding: 43px 68px;
+        }
+
+        h1 {
+            text-align: center;
+            color: orange;
+            text-decoration: underline;
+        }
+        h2{
+            text-align: center;
+    color: green;
+    text-decoration: underline;
+        }
+
+        main{
+            display: flex;
+        }
+        p{
+            padding: 10px 100px;
+    max-width: 500px;
+        }
+        nav img{
+            margin: 0 100px;
+    width: 142px;
+    height: 24px;
+        }
+
+        footer{
+            margin: 50px;
+    background-color: #80e280;
+    display: flex;
+    justify-content: space-around;
+        }
+
+        footer ul{
+            align-items: center;
+    display: grid;
+        }
+        footer li{
+            padding: 20px 20px;
+        }
+
+    </style>
+</head>
+
+<body>
+    <header>
+        <img src="jssstu.jpg" alt="SJCE logo" height = "150px">
+        <nav>
+            <ul id="nav1">
+                <li>About</li>
+                <li>Admission</li>
+                <li>Research</li>
+                <li>Programmes</li>
+            </ul>
+        </nav>
+    </header>
+
+    <ul id="nav2">
+        <li>Timetable</li>
+        <li>Exams</li>
+        <li>Admission</li>
+        <li>Login</li>
+    </ul>
+    <h1>SRI JAYACHAMARAJENDRA COLLEGE OF ENGINEERING</h1>
+        <h2>CONSTITUENT OF JSSSTU, MYSORE</h2>
+    <main>
+        <p>
+            Lorem ipsum dolor sit amet consectetur adipisicing elit. Labore, nobis qui. Quod magnam iste enim voluptates
+            esse alias culpa eligendi, incidunt reiciendis asperiores numquam porro omnis ipsam eius commodi. Dolorem
+            voluptate velit optio quidem?
+        </p>
+
+        <img src="jssstu.jpg" alt="another image">
+    </main>
+
+    <footer>
+        <div>
+        <h2>Contact us</h2>
+        <ul>
+            <li>0821525649</li>
+            <li>jssstu@jssstu.com</li>
+            <li>0821546778</li>
+        </ul>
+        </div>
+        <div>
+        <h2>Quick links</h2>
+        <ul>
+            <li><a href="">reports</a></li>
+            <li><a href="">vission</a></li>
+            <li><a href="">mission</a></li>
+        </ul>
+        </div>
+    </footer>
+
+</body>
+
+</html>

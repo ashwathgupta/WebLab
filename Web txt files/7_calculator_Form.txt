@@ -1,0 +1,199 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Calculator</title>
+
+    <style>
+        body {
+            background-color: aqua;
+            font-family: cursive;
+        }
+
+        h1 {
+            text-align: center;
+        }
+
+        #calc {
+            display: flex;
+            justify-content: center;
+            align-items: center;
+        }
+
+        table {
+            border: 3px solid black;
+            border-radius: 10px;
+        }
+
+        input {
+            width: 100%;
+            background-color: aquamarine;
+            font-size: 30px;
+            border: 2px solid black;
+            border-radius: 3px;
+            padding: 10px;
+        }
+
+        input:hover {
+            cursor: pointer;
+            background-color: bisque;
+        }
+    </style>
+</head>
+
+<body>
+    <h1>CALCULATOR</h1>
+    <div id="calc">
+        <table>
+            <tr>
+                <td colspan="3"><input type="text" id="result"></td>
+                <td><input type="button" value="Clear" onclick="clearscreen()"></td>
+            </tr>
+
+            <tr>
+                <td><input type="button" value="1" onclick="addstring('1')"></td>
+                <td><input type="button" value="2" onclick="addstring('2')"></td>
+                <td><input type="button" value="3" onclick="addstring('3')"></td>
+                <td><input type="button" value="+" onclick="addstring('+')"></td>
+            </tr>
+            <tr>
+                <td><input type="button" value="4" onclick="addstring('4')"></td>
+                <td><input type="button" value="5" onclick="addstring('5')"></td>
+                <td><input type="button" value="6" onclick="addstring('6')"></td>
+                <td><input type="button" value="-" onclick="addstring('-')"></td>
+            </tr>
+            <tr>
+                <td><input type="button" value="7" onclick="addstring('7')"></td>
+                <td><input type="button" value="8" onclick="addstring('8')"></td>
+                <td><input type="button" value="9" onclick="addstring('9')"></td>
+                <td><input type="button" value="*" onclick="addstring('*')"></td>
+            </tr>
+
+            <tr>
+                <td><input type="button" value="0" onclick="addstring('0')"></td>
+                <td><input type="button" value="." onclick="addstring('.')"></td>
+                <td><input type="button" value="/" onclick="addstring('/')"></td>
+                <td><input type="button" value="=" onclick="calculate()"></td>
+            </tr>
+        </table>
+    </div>
+
+    <script>
+        function clearscreen() {
+            document.getElementById("result").value = "";
+
+        }
+
+        function addstring(val) {
+            document.getElementById("result").value += val;
+        }
+
+        function calculate() {
+            var p = document.getElementById("result").value;
+            var q = eval(p);
+            document.getElementById("result").value = q;
+        }
+    </script>
+</body>
+
+
+</html>
+
+
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Form</title>
+    <style>
+        body {
+            padding: 10px;
+            margin: 10px;
+            /* text-align: center */
+        }
+
+        div {
+            background-color: rgba(128, 128, 128, 0.667);
+            padding: 10px;
+            width: 300px;
+        }
+
+        input[type="submit"] {
+            text-align: center;
+            margin-left: 100px;
+        }
+
+        label,
+        input {
+            padding: 5px;
+            margin: 5px;
+        }
+    </style>
+    <script>
+        function validate() {
+            let name = document.getElementById('name').value;
+            let email = document.getElementById('email').value;
+            let phone = document.getElementById('phone').value;
+            let gender = document.getElementById('gender').value;
+            let colour = document.getElementById('colour').value;
+        //    alert(gender)
+            if(name.length===0){
+                alert("Enter name")
+                return
+            }
+            if (phone.length != 10) {
+                alert('Please enter correct mobile no');
+               return
+            }
+            if(gender==="select"){
+                alert("Enter Gender")
+                return
+            }
+
+
+            var output = 'Name: ' + name + '\n';
+            output += 'Email: ' + email + '\n';
+            output += 'Mobile No: ' + phone + '\n';
+            output += 'Gender: ' + gender + '\n';
+            output += 'Colour: ' + colour + '\n';
+            let display = document.getElementById('result');
+            display.value = output;
+            return false;
+           
+        }   
+    </script>
+</head>
+
+<body>
+    <div class="container">
+        <h1>Form Validation</h1><br>
+        <form action="" onsubmit="return validate()">
+            <label for="name">Name:</label>
+            <input type="text" id="name" /><br>
+            <label for="email">Email:</label>
+            <input type="email" id="email" /><br>
+            <label for="phone">Mobile No:</label>
+            <input type="tel" id="phone" />
+            <label for="colour">Favourite Colour:</label>
+            <input type="text" id="colour" />
+            <br><br>
+            <label for="name">Gender:</label>
+            <select id="gender">
+                <option value="select" selected disabled>Select</option>
+                <option value="male">Male</option>
+                <option value="female">Female</option>
+                <option value="others">Others</option>
+            </select><br><br>
+            <input type="submit" value="Submit" >
+        </form>
+    </div>
+    <div>
+        <textarea id="result" cols="30" rows="10" readonly></textarea>
+    </div>
+</body>
+
+</html>

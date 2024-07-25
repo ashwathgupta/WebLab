@@ -1,0 +1,115 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <style>
+        body {
+          font-family: sans-serif;
+          display: flex;
+          justify-content: space-evenly;
+        }
+        #sec-1 {
+          width: 50%;
+        }
+
+        #sec-2 {
+          width: 25%;
+        }
+
+
+        .skill-list, .lang-list {
+          list-style: none;
+        }
+
+        .skill-list li, .lang-list li {
+          display: inline-block;
+          border: solid 1px black;
+          background-color: whitesmoke;
+          margin: 5px;
+          padding: 10px;
+          text-align: center;
+          border-radius: 8px;
+        }
+
+    </style>
+    <title>Resume</title>
+  </head>
+  <body>
+      <section id="sec-1">
+        <h1><a href="https://www.linkedin.com/"> NAME</a></h1>
+        <div id="image">
+          <img src="profile pic2.jpg" alt="" height="200">
+        </div>
+        <p>
+          
+          Passionate about Computer Science and Programming, Quick Learner,
+          Interested in Problem solving
+        </p>
+        <br />
+        <div>
+          <h3>Education</h3>
+          <div>
+            <h4>Sri Jayachamrajendra Engineering College (SJCE), Mysuru</h4>
+            <i><p>B.E in Computer Science</p></i>
+            <p>Expected year of Graduation - 2024</p>
+            <p>Currently Pursuing</p>
+            <p>Current CGPA - 8.5 / 10</p>
+          </div>
+          <div>
+            <h4>Delhi Public School Sushant Lok</h4>
+            <i><p>12th</p></i>
+            <p>Passed 12th in 2020</p>
+            <p>Board - CBSE</p>
+            <p>Score - 94.4%</p>
+          </div>
+        </div>
+        <div>
+          <h3>Projects</h3>
+          <div>
+            <h4>shopping website</h4>
+            <p>
+              A simple shopping website using html css and javascript
+            </p>
+          </div>
+        </div>
+        <div>
+          <h3>Additional</h3>
+          <ul>
+            <li>Google Developers Student Club</li>
+          </ul>
+        </div>
+      </section>
+      <section id="sec-2">
+        <div>
+          <address>
+            <p><i>Vijayshripura</i></p>
+            <p> SJCE college</p>
+            <p>Mysuru</p>
+          </address>
+          <p>+91 1234567890</p>
+          <address>name@gmail.com</address>
+          <p>On Github as: NAME</p>
+        </div>
+        <div>
+          <h3>Skills</h3>
+          <ul class="skill-list">
+            <li>Data Structures & Algorithms</li>
+            <li>Python</li>
+            <li>HTML</li>
+            <li>CSS</li>
+            <li>C</li>
+          </ul>
+        </div>
+        <div>
+          <h3>Languages</h3>
+          <ul class="lang-list">
+            <li>English</li>
+            <li>Hindi</li>
+           
+          </ul>
+        </div>
+      </section>
+  </body>
+</html>
